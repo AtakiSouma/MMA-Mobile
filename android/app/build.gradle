@@ -76,7 +76,7 @@ android {
 
     namespace "com.eventhub"
     defaultConfig {
-        applicationId "com.eventhub"
+        applicationId "com.eventhub.nam"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -108,6 +108,8 @@ dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
     implementation("com.facebook.react:flipper-integration")
+    implementation project(':lottie-react-native')
+    implementation ('com.facebook.android:facebook-android-sdk:latest.release')
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
